@@ -1,0 +1,100 @@
+.portfolio-section__block{
+
+  perspective: 150rem;
+  position: relative;
+  height: 35rem;
+  overflow: hidden;
+  &__side{
+    transition: all .8s;
+    position: absolute;
+    top:.5rem;
+    left:3rem;
+    width: 100%;
+    backface-visibility: hidden;
+    height: 30rem;
+    max-width:100%;
+    &--front{
+      width: 85%;
+
+    }
+    &--back{
+      background-image: linear-gradient(to right bottom, $primary-color,$secondary-color);
+      width: 85%;
+      transform: rotateY(180deg);
+
+      .project-link{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+      }
+
+    }
+
+
+  }
+
+  &:hover &__side--front{
+    transform: rotateY(180deg);
+
+
+  }
+  &:hover &__side--back{
+    transform: rotateY(0deg);
+
+
+
+  }
+}
+
+  @include respond(tab-port){
+
+    .portfolio-section__block{
+
+
+      height: auto;
+      &__side{
+        position: relative;
+        top:.5rem;
+        left:3rem;
+        width: 100%;
+        height: auto;
+        padding: 4rem 0;
+        background: white;
+        &--front{
+          width: 85%;
+
+        }
+        &--back{
+          position: relative;
+          top:0rem;
+          left:3rem;
+          height: auto;
+          background-image: linear-gradient(to right bottom, $primary-color,$secondary-color);
+          width: 85%;
+          transform: rotateY(0deg);
+
+          .project-link{
+            position: relative;
+            top:80%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-size: 1rem;
+
+          }
+
+        }
+
+
+      }
+
+      &:hover &__side--front{
+        transform: rotateY(0deg);
+
+
+      }
+
+    }
+
+}

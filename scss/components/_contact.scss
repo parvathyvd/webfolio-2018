@@ -1,8 +1,9 @@
 .contact-section{
+  line-height: 5.5rem;
 
 
   &__bg{
-    padding: 12rem 0;
+    padding: 10rem 0;
     background-color: $light-brown;
     color: $color-white;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 65%, 0% 100%);

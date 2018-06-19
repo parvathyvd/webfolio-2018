@@ -14,7 +14,7 @@
 .about-section__block{
 
     img{
-      display: inline-block;
+      display: block;
       position: relative;
     }
     &--image{
@@ -27,6 +27,13 @@
       shape-outside:circle(50% at 50% 50%);
       margin-right: 5rem;
       backface-visibility: hidden;
+      @include respond(phone){
+        display: block;
+        margin: 0 auto;
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+
+      }
     }
     &--caption{
       position: absolute;
@@ -35,6 +42,10 @@
       left:50%;
     }
   &--text{
+
+    @include respond(phone){
+      display: inline-block;
+    }
 
     }
   }

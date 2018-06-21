@@ -375,7 +375,10 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     height: 30rem;
-    max-width: 100%; }
+    max-width: 100%;
+    mix-blend-mode: multiply;
+    -webkit-box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3); }
     .portfolio-section__block__side--front {
       width: 85%; }
     .portfolio-section__block__side--back {

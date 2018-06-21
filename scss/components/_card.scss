@@ -4,6 +4,7 @@
   position: relative;
   height: 35rem;
   overflow: hidden;
+
   &__side{
     transition: all .8s;
     position: absolute;
@@ -13,6 +14,10 @@
     backface-visibility: hidden;
     height: 30rem;
     max-width:100%;
+    mix-blend-mode: multiply;
+    box-shadow: .5rem 1rem 3rem rgba(0,0,0,0.3);
+
+
     &--front{
       width: 85%;
 

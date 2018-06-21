@@ -98,3 +98,12 @@
     }
 
 }
+img{
+  height: 400px;
+}
+
+.portfolio-section__image{
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}

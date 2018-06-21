@@ -385,7 +385,8 @@ body {
       background-image: linear-gradient(to right bottom, #88BDBC, #254E58);
       width: 85%;
       -webkit-transform: rotateY(180deg);
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      height: 33rem; }
       .portfolio-section__block__side--back .project-link {
         position: absolute;
         top: 50%;
@@ -417,7 +418,7 @@ body {
         position: relative;
         top: 0rem;
         left: 3rem;
-        height: auto;
+        height: 100%;
         background-image: -webkit-gradient(linear, left top, right bottom, from(#88BDBC), to(#254E58));
         background-image: -webkit-linear-gradient(left top, #88BDBC, #254E58);
         background-image: -o-linear-gradient(left top, #88BDBC, #254E58);

@@ -21,6 +21,7 @@
       background-image: linear-gradient(to right bottom, $primary-color,$secondary-color);
       width: 85%;
       transform: rotateY(180deg);
+      height: 33rem;
 
       .project-link{
         position: absolute;
@@ -70,7 +71,7 @@
           position: relative;
           top:0rem;
           left:3rem;
-          height: auto;
+          height: 100%;
           background-image: linear-gradient(to right bottom, $primary-color,$secondary-color);
           width: 85%;
           transform: rotateY(0deg);

@@ -33,6 +33,11 @@
         top:50%;
         left:50%;
         transform: translate(-50%,-50%);
+        color: white;
+        &:hover{
+          color: $primary-color;
+        }
+
 
       }
 
@@ -81,13 +86,18 @@
           width: 85%;
           transform: rotateY(0deg);
 
-          .project-link{
+          a.project-link{
             position: relative;
-            top:80%;
+            top:5%;
             left:50%;
             transform: translate(-50%,-50%);
-            font-size: 1rem;
+            font-size: 3rem;
 
+
+          &:focus,&:active {
+            color: $primary-color;
+
+          }
           }
 
         }
